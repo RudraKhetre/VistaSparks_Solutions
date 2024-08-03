@@ -215,93 +215,72 @@
 
 		</header>
 		<!-- End Header -->
+	<!-- map section -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15125.35406519921!2d73.7535003!3d18.6038378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42c774b9d7084483!2sNovatec%20IT%20Training%20%26%20Services!5e0!3m2!1sen!2sin!4v1618642181996!5m2!1sen!2sin" style="border:0; width: 100%; height: 55vh;" allowfullscreen="" loading="lazy"></iframe>
+	<!-- end map section -->
 
-	<!-- page-banner-section 
-			================================================== -->
-			<section class="page-banner-section" style="background-image: url(/images/about.jpg);">
-				<div class="container">
-					<h1 style="color: white;">Contact Us</h1>
-					<ul class="page-depth">
-						<li><a style="color: white;" href="index.html">VistaSpark</a></li>
-						<li><a style="color: white;" href="about.html">Contact Us</a></li>
-					</ul>
+	<!-- contact-section 
+		================================================== -->
+	<section class="contact-section">
+		<div class="container">
+			<div class="text-center">
+				<h1>Get in Touch</h1>
+				<p>Share your views with us, we’re looking forward to hear from you.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="images/contact.jpg" alt="" class="img-fluid">
 				</div>
-			</section>
-			<!-- End page-banner-section -->
-	
-
-		<!-- contact-section 
-			================================================== -->
-		<section class="contact-section">
-			<div class="container">
-				<div class="text-center">
-					<h1>Get in Touch</h1>
-					<p>Share your views with us, we’re looking forward to hear from you.</p>
+				<div class="col-md-6 align-self-center mt-4">
+					<div id="msg" class="message alert"></div>
+					<form id="contact">
+						<input type="hidden" name="contact-form" value="contact">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input placeholder="Name" class="form-control" name="contact-name" id="contact-name" type="text" required>
+									<label for="contact-name">Your Name <span class="text-danger">*</span></label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input class="form-control" placeholder="Email" name="contact-email" id="contact-email" type="text" required>
+									<label for="contact-email">Your Email <span class="text-danger">*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input class="form-control" placeholder="Phone Number" name="contact-phone" id="contact-phone" type="text" required>
+									<label for="contact-phone">Your Phone Number <span class="text-danger">*</span></label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select name="occupation" id="contact-occupation" class="form-control" required>
+										<option selected disabled hidden>Please Select</option>
+										<option value="Professional">Professional</option>
+										<option value="Job Seeker">Job Seeker</option>
+										<option value="Fresher">Fresher</option>
+									</select>
+									<label for="contact-occupation">Occupation <span class="text-danger">*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Message" class="form-control" name="contact-message" id="contact-message"></textarea>
+							<label for="contact-message">Your Message</label>
+						</div>
+						<button class="btn btn-primary" type="submit" id="submit_contact">Submit Message</button>
+					</form>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<!-- map section -->
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15125.35406519921!2d73.7535003!3d18.6038378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42c774b9d7084483!2sNovatec%20IT%20Training%20%26%20Services!5e0!3m2!1sen!2sin!4v1618642181996!5m2!1sen!2sin"
-							style="border:0; width: 100%; height: 55vh;" allowfullscreen="" loading="lazy"></iframe>
-						<!-- end map section -->
-					</div>
-					<div class="col-md-6 align-self-center mt-4">
-						<div id="msg" class="message alert"></div>
-						<form id="contact">
-							<input type="hidden" name="contact-form" value="contact">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input placeholder="Name" class="form-control" name="contact-name"
-											id="contact-name" type="text" required>
-										<label for="contact-name">Your Name <span class="text-danger">*</span></label>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" placeholder="Email" name="contact-email"
-											id="contact-email" type="text" required>
-										<label for="contact-email">Your Email <span class="text-danger">*</span></label>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" placeholder="Phone Number" name="contact-phone"
-											id="contact-phone" type="text" required>
-										<label for="contact-phone">Your Phone Number <span
-												class="text-danger">*</span></label>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<select name="occupation" id="contact-occupation" class="form-control" required>
-											<option selected disabled hidden>Please Select</option>
-											<option value="Professional">Professional</option>
-											<option value="Job Seeker">Job Seeker</option>
-											<option value="Fresher">Fresher</option>
-										</select>
-										<label for="contact-occupation">Occupation <span
-												class="text-danger">*</span></label>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<textarea placeholder="Message" class="form-control" name="contact-message"
-									id="contact-message"></textarea>
-								<label for="contact-message">Your Message</label>
-							</div>
-							<button class="btn btn-primary" type="submit" id="submit_contact">Submit Message</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End contact section -->
+		</div>
+	</section>
+	<!-- End contact section -->
 
 		<!-- contact-info-section 
 			================================================== -->
@@ -365,9 +344,8 @@
 				<div class="up-footer">
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
-							<div class="footer-widget text-widget">
-								<h2>Lorem</h2>
-
+							<div class="footer-widget text-widget" >
+<h2>VistaSpark Solutions </h2>
 								<ul>
 									<img width="250px" src="/images/Logo/fulllogo-rb.png" alt="">
 								</ul>
@@ -430,7 +408,7 @@
 			<div class="footer-copyright copyrights-layout-default">
 				<div class="container">
 					<div class="copyright-inner">
-						<div class="copyright-cell"> &copy; 2021 <span class="highlight">Novatec</span>. Developed by <a
+						<div class="copyright-cell"> &copy; 2024 <span class="highlight">VistaSpark Solutions</span>. Developed by <a
 								href="https://spwebconnect.com" target="_blank"
 								rel="noopener noreferrer">Spwebconnect</a></div>
 						<div class="copyright-cell">
